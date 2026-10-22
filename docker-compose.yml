@@ -1,0 +1,21 @@
+services:
+
+  postgres:
+    image: postgres:16
+    container_name: bd-usuarios
+    restart: always
+    environment:
+      POSTGRES_DB: bdusuarios
+      POSTGRES_USER: devuser
+      POSTGRES_PASSWORD: devuser@2026
+    ports:
+      - "5435:5432"
+    volumes:
+      - bd-usuarios-postgres-data:/var/lib/postgresql/data
+    networks:
+      - spring-study-network
+volumes:
+  bd-usuarios-postgres-data:
+networks:
+  spring-study-network:
+    driver: bridge
