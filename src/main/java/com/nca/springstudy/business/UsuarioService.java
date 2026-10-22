@@ -4,7 +4,6 @@ import com.nca.springstudy.infrastructure.entities.Usuario;
 import com.nca.springstudy.infrastructure.exceptions.ConflictException;
 import com.nca.springstudy.infrastructure.exceptions.ResourceNotFoundException;
 import com.nca.springstudy.infrastructure.repositories.UsuarioRepository;
-import org.springframework.boot.context.config.ConfigDataResourceNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
